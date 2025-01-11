@@ -20,7 +20,7 @@ export const initUser = () => {
                     msg:'El nombre no puede ser menor a 2 ni mayor a 100 caracteres',
                 },
                 is:{
-                    args: /^a-zA-ZñÑáéíóúü/,
+                    args: /^[a-zA-ZñÑáéíóúüÜÁÉÍÓÚ\s]+$/,
                     msg:'El nombre sólo puede contener letras del abecedario español'
                 }
             }
@@ -36,7 +36,7 @@ export const initUser = () => {
                 },
                 isAlpha:true,
                 is:{
-                    args: /^a-zA-ZñÑáéíóúü/,
+                    args: /^[a-zA-ZñÑáéíóúüÜÁÉÍÓÚ\s]+$/,
                     msg:'El apellido paterno sólo puede contener letras del abecedario español'
                 }
             }
@@ -50,7 +50,7 @@ export const initUser = () => {
                 },
                 isAlpha:true,
                 is:{
-                    args: /^a-zA-ZñÑáéíóúü/,
+                    args: /^[a-zA-ZñÑáéíóúüÜÁÉÍÓÚ\s]+$/,
                     msg:'El apellido materno sólo puede contener letras del abecedario español'
                 }
             }
