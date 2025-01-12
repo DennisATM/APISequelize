@@ -8,7 +8,7 @@ router.get('/user',getAllActiveUsers);
 router.get('/user/filter',getUsersByFilter);
 router.get('/user/:id',getActiveUserById);
 
-router.get('/user/admin',getAllUsers);
+router.get('/admin/user',getAllUsers);
 router.get('/admin/user/:id',getUsersById);
 
 export default router;
