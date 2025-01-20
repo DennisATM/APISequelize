@@ -82,6 +82,7 @@ export const initUser = () => {
         sequelize: dbConfig,
         modelName: 'User',
         tableName: 'users',
-        timestamps: true
+        timestamps: true,
+        paranoid:true
     })
 }

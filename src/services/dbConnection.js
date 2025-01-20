@@ -5,7 +5,7 @@ export const dbConnection = async ()=>{
     try {
         await dbConfig.authenticate();
 
-        await initUser();
+        initUser();
         await dbConfig.sync({alter:true});
 
         console.log(`Logramos conectarnos a la base de Datos a traves de Sequelize 😁`);
