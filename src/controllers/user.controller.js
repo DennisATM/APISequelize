@@ -83,7 +83,7 @@ export const getUsersById = async (req, res, next) => {
     try {
         const { id } = req.params;
     
-        const user = await User.findByPk(id);
+        const user = await User.findByPk(id,{paranoid:false});
     
         res.status(200).json ({
             message:'Usuario encontrado con éxito',
